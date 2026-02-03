@@ -1,0 +1,24 @@
+{
+  "mainPage": {
+    "pageTitle": ".page-header__title",
+    "daysNav": ".page-nav__day",
+    "movie": ".movie",
+    "movieTitle": ".movie__title",
+    "movieDescription": ".movie__synopsis",
+    "movieDuration": ".movie__data-duration",
+    "seanceTime": ".movie-seances__time"
+  },
+  "adminPage": {
+    "emailInput": "input[name='email']",
+    "passwordInput": "input[name='password']",
+    "submitButton": ".login__button"
+  },
+  "hallPage": {
+    "filmTitle": ".buying__info-title",
+    "seanceStart": ".buying__info-start",
+    "hallName": ".buying__info-hall",
+    "chairStandart": ".buying-scheme__chair_standart",
+    "chairTaken": ".buying-scheme__chair_taken",
+    "bookButton": ".acceptin-button"
+  }
+}

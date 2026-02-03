@@ -1,0 +1,14 @@
+{
+  "adminCredentials": {
+    "valid": {
+      "email": "qamid@qamid.ru",
+      "password": "qamid"
+    },
+    "invalid": [
+      {
+        "email": "wrong@test.ru",
+        "password": "wrongpassword"
+      }
+    ]
+  }
+}
