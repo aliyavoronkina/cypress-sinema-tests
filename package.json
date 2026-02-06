@@ -1,4 +1,4 @@
-{
+﻿{
   "name": "cypress-cinema-tests",
   "version": "1.0.0",
   "description": "Тесты для приложения бронирования билетов в кино",
@@ -6,12 +6,22 @@
   "scripts": {
     "cy:open": "cypress open",
     "cy:run": "cypress run",
-    "test": "cypress run"
+    "test": "cypress run",
+    "cy:run:dashboard": "cypress run --record --key ваш-ключ",
+    "cy:run:parallel": "cypress run --parallel --record --key ваш-ключ",
+    "jenkins:chrome": "cypress run --browser chrome",
+    "jenkins:firefox": "cypress run --browser firefox",
+    "jenkins:edge": "cypress run --browser edge",
+    "jenkins:parallel:browsers": "npx concurrently \"npm run jenkins:chrome\" \"npm run jenkins:firefox\"",
+    "jenkins:booking-tests": "cypress run --spec \"cypress/e2e/booking-tests/**/*.cy.js\"",
+    "jenkins:admin-tests": "cypress run --spec \"cypress/e2e/admin-tests/**/*.cy.js\"",
+    "jenkins:parallel:folders": "npx concurrently \"npm run jenkins:booking-tests\" \"npm run jenkins:admin-tests\""
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "concurrently": "^8.2.2",
     "cypress": "^13.6.0"
   }
 }
